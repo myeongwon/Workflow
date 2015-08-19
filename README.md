@@ -4,7 +4,7 @@
 1. jQuery-technic : jQuery로 구현한 작업내용.
   - [jQuery-technic 브런치 바로가기]
 2. javascript-technic : javascript로 구현한 작업내용.
-  - [javascript-technic 브런치 바로가기](https://github.com/myeongwon/Workflow/blob/javascript-technic/README.md)
+  - [javascript-technic 브런치 바로가기](https://github.com/myeongwon/Workflow/tree/javascript-technic)
 
 #### master 내용
 1. skip navigation 
