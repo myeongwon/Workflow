@@ -1,7 +1,5 @@
-### 작업내용 기록
+#### javascript-technic 브런치 (현재위치)
+javascript-technic : javascript로 구현한 작업내용.
 
-#### 브런치 분류
-1. jQuery-technic : jQuery로 구현한 작업내용.
-[jQuery-technic 브런치 바로가기]
-2. javascript-technic : javascript로 구현한 작업내용.
-[javascript-technic 브런치 바로가기](https://github.com/myeongwon/Workflow/blob/javascript-technic/README.md)
+##### 1. skicky menu 
+: 화면 스크롤이 특정 top값에 따라 nav의 형태나 위치가 변화
