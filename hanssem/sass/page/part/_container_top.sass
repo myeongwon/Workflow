@@ -1,0 +1,40 @@
+// ----------------------------------------------
+//	container 공통 스타일 부분 
+// ----------------------------------------------
+.container_top 
+	+padding(28px, 0, 47px, 0)
+	height: $container_top_height
+	line-height: $container_top_height
+	
+.site_info
+	@extend %fl
+	& li
+		@extend %fl
+		+padding(0, 14px, 0, 14px)
+		background: url(../images/common/bg_util_bar.gif) no-repeat left 2px
+		&:first-child
+			padding-left: 0
+			background: none
+		& a
+			display: block
+			color: $page_color
+.language 
+	@extend %fr
+	height: $container_top_height
+	font-size: $language_font_size
+	
+	strong
+		@extend %fl
+
+	ul 
+		@extend %fl
+		li 
+			@extend %fl
+			&:hover a 
+				color: #000
+			.on a 
+				color: $language_on_color
+			a 
+				@extend %fl
+				+padding(0, 3px, 0, 3px)
+				

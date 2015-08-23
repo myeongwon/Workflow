@@ -1,0 +1,163 @@
+// ----------------------------------------------
+//	main 
+// ----------------------------------------------
+
+.visual_area
+	+position(relative)
+	+margin(null, null, 50px, null)
+
+	width: $visual_width
+	height: $visual_height
+	overflow: hidden
+
+.slide_area
+	width: $visual_width
+	height: $visual_height
+	li
+		@extend %fl
+		width: $visual_width
+		a
+			display: blocks
+.slide_btn
+	+position(absolute, null, 20px, 20px, null)
+	font-size: $font_size0
+	a
+		display: inline-block
+		+margin(null, null, null, 5px)
+		width: 20px
+		height: 20px
+		background-repeat: no-repeat
+	.btn_stop 
+		background-image: url(../images/main/ico/icon_banner_stop.gif)
+	.btn_play 
+		background-image: url(../images/main/ico/icon_banner_start.gif)
+	.btn_prve 
+		background-image: url(../images/main/ico/icon_banner_prev.gif)
+	.btn_next 
+		background-image: url(../images/main/ico/icon_banner_next.gif)
+
+	// ----------------------------------------------
+	//	한샘 site link
+	// ----------------------------------------------
+.hs_site_link 
+	@extend %cf
+	+margin(null, null, 34px, null)
+	>div
+		+position(relative)
+		float: left
+		+padding(25px, 25px, 0, 24px)
+		width: $stie_link_width - (25+24)
+		height: $stie_link_height - 25
+		border-top: 1px solid $boder_color
+		border-bottom: 1px solid $boder_color
+		>h4 
+			+margin(null, null, 8px, null)
+			font-size: $main_h4_size
+			color: $main_h4_color
+		>p
+			line-height: 24px
+			font-size: 14px
+			color: $main_p_color
+		>a 
+			display: block
+			+margin(8px)
+			+padding(null, 11px, null, 11px)
+			width: $main_btn_width
+			height: $main_btn_height
+			line-height: $main_btn_height
+			background: #a6a6a6 url(../images/main/ico/bg_btn_link_gray.png) no-repeat right center
+			color: #fff
+			font-size: 13px
+
+	>div:nth-child(even)
+		width: 430px
+		border-left: 1px solid $boder_color
+		.link_slide_area
+			right: 0
+	.bottom_none
+		border-bottom: none
+
+.link_slide_area
+	+position(absolute, 25px, 25px, null, null)
+	width: $link_slide_width
+	height: $link_slide_height
+	overflow: hidden
+	.link_img_slide
+		height: 180px
+		li
+			@extend %fl
+
+/* hs_news_area */
+.hs_news_area
+	@extend %cf
+	+margin(null, null, 33px, null)
+	>div
+		+position(relative)
+		@extend %fl
+		+margin(null, 28px, null, null)
+		width: $news_area_width
+		font-size: $main_news_size
+		color: $main_news_color
+		
+		:nth-child(even)
+			+margin(null, 0, null, -1px)
+			+padding(null, null, null, 22px)
+			width: $stie_link_width - 22
+			border-left: 1px solid $boder-color
+
+	h4
+		+margin(null, null, 4px, null)
+		line-height: 32px
+		border-bottom: 1px solid $boder-color
+	ul li 
+		overflow: hidden
+		height: 28px
+		line-height: 28px
+		a
+			display: block
+			float: left
+			width: 355px
+			color: #262626
+			white-space: nowrap
+			overflow: hidden
+			text-overflow: ellipsis
+		span
+			float: right
+	.btn_more
+		+position(absolute, 0, 0, null, null)
+		width: 40px
+		height: 28px
+		background: url(../images/main/bg_board_more.gif) no-repeat
+		text-indent: -9999px
+
+.hs_ad_area
+	@extend %cf
+	.banner
+		float: left
+	.sns
+		float: right
+		border-top: 1px solid $boder-color
+		border-bottom: 1px solid $boder-color
+		ul li 
+			height: 111px
+			font-size: 14px
+			&.hs_blog
+				background: url(../images/main/ico/bg_blog.gif) no-repeat right center
+			&.hs_facebook
+				background: url(../images/main/ico/bg_facebook.gif) no-repeat right center
+			a 
+				display: block
+				+padding(20px, 15px, 0, 0)
+				width: 230px
+				height: 91px
+				strong 
+					display: block
+					line-height: 28px
+				span 
+					line-height: 24px
+					color: $main_p_color
+		li + li
+			border-top: 1px solid $boder-color
+
+
+

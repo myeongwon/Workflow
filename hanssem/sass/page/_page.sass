@@ -1,0 +1,55 @@
+// ----------------------------------------------
+//	스킵네비게이션 
+// ----------------------------------------------
+@import part/skip
+
+// 페이지 레이아웃 
+#wrap 
+	+position(relative)
+	@extend %cf
+	@extend %align-center
+	width: $wrap_width
+	border-left: 1px solid $boder_color
+	border-top: 1px solid $boder_color
+	
+	& header 
+		@extend %fl
+		+padding(0, 40px, 58px, 54px)
+		width: $header_width
+	& .container 
+		@extend %fl
+		+padding(0, 50px, 0, 40px)
+		width: $container_width
+		background: url(../images/common/bg_head_shadow.png) repeat-y left top
+		
+		footer
+			@extend %cf 
+			+margin(35px, 0, 0, 0)
+
+
+
+
+// ----------------------------------------------
+//	페이지 스타일 모듈
+// ----------------------------------------------
+
+@import part/header
+@import part/nav
+@import part/container_top
+@import part/sub_location
+@import part/main
+@import part/footer
+
+// ----------------------------------------------
+//	세부페이지 스타일 모듈
+// ----------------------------------------------
+
+// company_info pßage
+@import part/company_info/company_info
+
+// ----------------------------------------------
+//	페이지 스타일 정의
+// ----------------------------------------------
+
+
+

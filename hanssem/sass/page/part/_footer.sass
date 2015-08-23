@@ -1,0 +1,48 @@
+// ----------------------------------------------
+//	footer style
+// ----------------------------------------------
+
+.footer_left_area
+	float: left
+	color: $footer_font_color
+	.ft_links
+		+margin(null, null, 10px, null)
+		width: $footer_left_width
+		height: $footer_left_height
+		border-bottom: 1px solid $boder_color
+
+		li 
+			@extend %fl
+			line-height: $footer_left_height
+			a
+				+margin(null, 5px, null, 5px)
+				@extend %fl
+				color: $footer_font_color
+				
+.footer_left_area 
+	address
+		font-style: normal 
+		p
+			color: $footer_font_color
+			span 
+				display: inline-block
+				+margin(5px, 5px, 3px, 0)
+
+		a 
+			color: $footer_font_color
+.footer_right_area
+	@extend %fr
+	width: $footer_right_width
+	dl 
+		@extend %cf
+	dt 
+		height: $footer_left_height
+		line-height: $footer_left_height
+		border-bottom: 1px solid $boder_color
+	dd
+		@extend %fl
+		+margin(3px, null, 3px, null)
+
+
+
+	

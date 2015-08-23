@@ -1,0 +1,38 @@
+// ----------------------------------------------
+//	common 폴더
+// ----------------------------------------------
+
+
+@import common/normlize
+@import common/classes
+@import common/mixin
+
+// ----------------------------------------------
+//	config -변수선언
+// ----------------------------------------------
+@import config/vars
+
+
+body 
+	font-size: $page_font_size
+	color : $page_color
+	h1, h2, h3, h4, h5,
+		@extend %reset-style
+	ul 
+		@extend %reset-list
+	& a
+		color: $page_color
+		@extend %reset-link
+	dl
+		@extend %reset-style
+		dd 
+			@extend	%reset-style
+
+	.hide
+		@extend %hide
+
+
+// ----------------------------------------------
+//	페이지 스타일 
+// ----------------------------------------------
+@import page/page

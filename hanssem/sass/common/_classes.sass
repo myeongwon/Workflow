@@ -1,0 +1,99 @@
+//
+ * --------------------------------
+ * 모듈 클래스(플레이스홀더 클래스)
+
+// 정렬모듈 
+
+%align-center
+	margin:
+		left: auto
+		right: auto
+
+%reset-link
+	text-decoration: none
+
+%reset-list
+	margin: 0
+	padding: 0
+	list-style: none
+
+%reset-table
+	border-collapse: collapse
+	border-spacing: 0
+
+%reset-box-model
+	margin: 0
+	border: 0
+	padding: 0
+
+%reset-table-cell
+	text-align: left
+	font-weight: normal
+	vertical-align: middle
+
+%reset-font
+	font: inherit
+	font-size: 100%
+	vertical-align: baseline
+
+%reset-style
+	margin: 0
+	padding: 0
+//
+ * --------------------------------
+ * Float
+%fl
+	float: left
+%fr
+	float: right
+
+//
+ * --------------------------------
+ * 클리어픽스
+%cf
+	&::after
+		content: ''
+		display: block
+		clear: both
+	.lt-ie8 &
+		zoom: 1
+
+
+//
+	*--------------------------------
+	* a11y-hidden 	
+
+%a11y-hidden
+	overflow: hidden
+	position: absolute
+	clip:     rect(0 0 0 0)
+	clip:     rect(0,0,0,0)
+	width:    1px
+	height:   1px
+	margin:   -1px
+	padding:  0
+	border:   0
+	
+	&:focus,
+	&:active 
+		overflow: visible
+		position: static
+		clip:     auto
+		width:    auto
+		height:   auto
+		margin:   0
+
+%hide
+	overflow: hidden
+	position: absolute
+	clip:     rect(0 0 0 0)
+	clip:     rect(0,0,0,0)
+	width:    1px
+	height:   1px
+	margin:   -1px
+	padding:  0
+	border:   0
+  
+  
+
+
