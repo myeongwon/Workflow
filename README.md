@@ -8,4 +8,7 @@
 
 #### master 내용
 1. skip navigation 
-  - 웹접근성 준수 스킵네비게이션 제작
+	- 웹접근성 준수 스킵네비게이션 제작
+2. hanssem 웹페이지 제작
+	- 현재 index.html, ideology.html 완성
+	* css -> sass로 변경.
