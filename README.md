@@ -3,4 +3,4 @@
 
 ##### 1. sticky menu 
 - 화면 스크롤이 특정 위치에 따라 메뉴의 형태나 위치가 변화
-![sticky 메뉴 처음 형태](images/sticky01.png).
+
