@@ -48,23 +48,41 @@
 |    |     |
 │    │     ├── company_info
 │    │     │     ├── _1_ideology
-│    │     |     |        └── _ideology.sass
+│    │     │     │        └── _ideology.sass
 │    │     │     ├── _2_policy
-│    │     |     |        └── _company_policy.sasss
+│    │     |     │        └── _company_policy.sasss
 │    │     │     ├── _3_business
-│    │     |             └── _business_area.sasss
+│    │     |              └── _business_area.sasss
 │    │     |
 │    │     ├── customer_support
-│    │     │     └──  _service_center
-│    │     |             └── service_center.sass
+│    │     │     └──  service_center
+│    │     |              └── _service_center.sass
 │    │     |
 │    │     ├── employment
-│    │     │     └──  __employment_notice
-│    │     |             └── employment_notice.sass
-│    │     |
-│    │     |
-
-
-
-│    │     |     └── _footer.sass
+│    │     │     └──  employment_notice
+│    │     │              └── _employment_notice.sass
+│    │     │
+│    │     ├── investment_info
+│    │     │     ├──   management_info
+│    │     │     │        └── _ceo_message.sass
+│    │     |     └──   _investment.sass  
+│    │     │
+│    │     └── social_contribute
+│    │                   └──   _contribute.sass 
+└── html / sub
+│    ├── compamy_info
+│    │     │     ├── 1_ideology
+│    │     │     │        └── ideology.sass
+│    │     │
+│    ├── customer_support
+│    │     │     └──  employment_notice
+│    │     │
+│    ├── employment
+│    │     │     └──  employment_notice
+│    │     │
+│    ├── investment_info
+│    │     │     └──  employment_notice
+│    │     │
+│    ├── social_contribute
+│    │     │     └──  employment_notice
 ```
