@@ -4,6 +4,7 @@
 * 계속 업데이트중
 ```sh
 .
+├── config.rb
 ├── index.html
 ├── css
 |   ├──style.css.map
@@ -72,17 +73,25 @@
 └── html / sub
 │    ├── compamy_info
 │    │     │     ├── 1_ideology
-│    │     │     │        └── ideology.sass
+│    │     │     │        └── ideology.html
+│    │     │     ├── _2_policy
+│    │     |     │        └── company_policy.html
+│    │     │     ├── _3_business
+│    │     |              └── business_area.html
 │    │     │
 │    ├── customer_support
-│    │     │     └──  employment_notice
+│    │     │     └──  service_center
+│    │     |              └── service_center.html
 │    │     │
 │    ├── employment
 │    │     │     └──  employment_notice
+│    │     |              └── employment_notice.html
 │    │     │
 │    ├── investment_info
-│    │     │     └──  employment_notice
+│    │     │     └──  management_info
+│    │     |              └── ceo_message.html
 │    │     │
 │    ├── social_contribute
-│    │     │     └──  employment_notice
+│    │          └──  social_contribute.html
+└──────────────────────────────────────────────────────────────//   
 ```
