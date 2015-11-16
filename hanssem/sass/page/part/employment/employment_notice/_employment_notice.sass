@@ -1,0 +1,120 @@
+.employment_menu
+	@extend %sub_category_menu
+	li
+		width: $sub_category2_width
+.employment_con
+	@extend %management_title
+	text-align: center
+
+.recruit_table
+	border-top: 1px solid #000
+	line-height: 15px
+	font-size: 13px
+
+	th
+		font-weight: normal
+	.tit
+		text-align: left
+		a
+			color: #262626
+		a:hover
+			color: $page-color
+			text-decoration: underline
+	.progress
+		padding-left: 10px
+		text-align: left
+
+	thead
+		th
+			padding: 15px 0
+			height: 15px
+			
+			border-bottom: 1px solid #e1e1e1
+
+	tbody
+
+		line-height: 30px
+		text-align: center
+		th, td
+			border-bottom: 1px solid #e1e1e1
+		td
+			padding: 5px 0
+			
+			&.recruit_link a
+				display: inline-block
+				width: 73px
+				height: 42px
+				line-height: 42px
+				background-color: #000
+				color: #fff
+				&:hover
+					background-color: #555
+
+.paging
+
+
+	display: inline-block
+	line-height: 30px
+	font-size: 0
+	
+	>a
+		display:inline-block
+		font-size: 13px
+		@extend %fl
+		
+	
+
+		&.prev_btn
+			margin-right: 20px
+			padding-left: 17px
+			
+
+		&.next_btn
+			margin-left: 20px
+			padding-right: 17px
+			
+	ol
+
+		
+		font-size: 13px
+		// line-height: 30px
+		@extend %fl
+		@extend %cf
+		li 
+			float: left
+			a
+				display: block
+
+.search_recruit_area
+	padding-top: 20px
+	border-top: 1px solid $boder_color
+	text-align: center
+	legend
+		@extend %hide
+	.select_op
+		display: inline-block
+		padding: 5px
+		height: 15px
+		border: 1px solid $boder_strong_color
+		background: #fff
+		select
+			border: none
+
+	label
+		@extend %hide
+	input
+		margin: 0 10px
+		padding: 5px
+		width: 250px
+		height: 15px
+		border: 1px solid $boder_strong_color
+	button
+		display: inline-block
+		padding: 5px
+		width: 70px
+		border: 1px solid $boder_strong_color
+		background: #fff
+
+
+
+

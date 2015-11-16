@@ -1,3 +1,8 @@
+@import ./config/vars
+
+
+
+
 =skip
 	@extend %a11y-hidden
 
@@ -34,3 +39,15 @@
 	bottom:   $bottom
 	left:     $left
 	z-index:  $z-index
+
+=border($width: 1px, $style: solid, $color: $ideology_border_color)
+	border-width: $width
+	border-style: $style
+	border-color: $color
+
+=mq_tablet 
+	@media screen and (min-width: $tablet_min) and (max-width: $tablet_max)
+ 		
+=mq_mobile
+	@media screen and (max-width: $mobile_max)
+

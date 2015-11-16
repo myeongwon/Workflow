@@ -1,9 +1,10 @@
+@import ./config/vars
+@import ./common/mixin
 //
  * --------------------------------
  * 모듈 클래스(플레이스홀더 클래스)
 
 // 정렬모듈 
-
 %align-center
 	margin:
 		left: auto
@@ -94,6 +95,90 @@
 	padding:  0
 	border:   0
   
-  
+%sub_category_menu
+	li
+		float: left
+		line-height: 16px
+		font-size: 16px
+		a
+			display: block
+			+padding(17px, null, 17px, null)
+			border-bottom: 1px solid $ideology_border_color
+	li a :hover,
+	li.on a
+		color: #0d0d0d
+		+padding(null, null, 16px, null)
+		border-bottom: 2px solid $ideology_border_on_color
+	li + li
+		+margin(null, null, null, 12px)
 
 
+
+%sub_strong_style
+	strong 
+		display: inline-block
+		+margin(50px, 0, 20px, 0)
+		line-height: $management_strong_size * 1.2
+		font :
+			family: $nanum_mj
+			weight: 100
+			size: $management_strong_size
+		color: $management_color
+
+%management_title
+	strong 
+		display: inline-block
+		+margin(50px, 0, 20px, 0) 
+		line-height: $management_strong_size * 1.2
+		font :
+			family: $nanum_mj
+			weight: 100
+			size: $management_strong_size
+		color: $management_color
+
+%management_con
+	+position(relative)
+	> strong 
+		+margin(50px, 0, 20px, 0) 
+		display: inline-block
+		line-height: $management_strong_size * 1.2
+		font :
+			family: $nanum_mj
+			weight: 100
+			size: $management_strong_size
+		letter-spacing: -1px
+		color: $management_color
+
+%sub_side_menu
+	+margin(50px)
+	li
+		width: $sub_side_menu_width
+		height: $sub_side_menu_height
+		line-height: $sub_side_menu_height
+		background-color: $side_menu_on_color
+		&.on,
+		&:hover
+			background-color: #d7182a
+			color: #fff
+		a
+			display: inline-block
+			+padding(0,0,0,20px)
+			font-size: $side_menu_font_size
+			color: #fff
+		& + li
+			margin-top: 1px
+%boder-style
+	border-width: 1px 
+	border-style: solid 
+	border-color: $ideology_border_color
+
+%sub_img_style
+	img 
+		display: inline-block
+		+margin(35px, null, 35px, null)
+		// vertical-align: top
+
+%mq_tablet
+	@media screen and (min-width: $tablet_min) and (max-width: $tablet_max)
+%mq_mobile
+	@media screen and (max-width: $mobile_max)

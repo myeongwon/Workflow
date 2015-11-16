@@ -1,69 +1,18 @@
 // ----------------------------------------------
-//	company_info style 정의
+//	기업 소개 
+//  서브 메뉴 모듈 	
 // ----------------------------------------------
-// 기업소개 company_info.html 
 
-.ideology_area 
-	clear: both
+// 1. idology1 - 경영이념 
+@import _1_ideology/ideology
+// 2. policy - 경영방침 
+@import _2_policy/company_policy
 
-.ideology_menu 
-	li 
-		float: left
-		width: $ideology_menu_width
-		line-height: 16px
-		font-size: 16px
-		a
-			display: block
-			+padding(17px, null, 17px, null)
-			border-bottom: 1px solid $ideology_border_color
-	li a :hover,
-	li.on a
-		+padding(null, null, 16px, null)
-		border-bottom: 2px solid $ideology_border_on_color
+// 3. business  - 사업소개
+@import _3_business/business_area
+@import _3_business/introduction
 
-	li + li
-		+margin(null, null, null, 12px)
-
-.management_con 
-	+position(relative)
-	strong 
-		+margin(50px, 0, 20px, 0) 
-		display: inline-block
-		line-height: $management_strong_size
-		font-size: $management_strong_size
-		color: $management_color
-	p
-		font-size: $management_p_size
-		line-height: 20px
-		color: $management_color
-	.detaile_info
-		+position(absolute, 50px, 0, null, null)
-		dl
-			
-			+margin(5px, 0, 5px, 0)
-			line-height: 20px
-			dt
-				@extend %fl
-			dd 
-				@extend %fl
-				@extend %reset-style
-		.clear_left
-			clear: left
-	.deco_bg
-		+margin(30px, 0, 30px, 0)
-		clear: both
-	
-	.dec_area .dec
-		@extend %fl
-		+margin(20px, 0, 20px, 0)
-		width: $ideology_dec_width
-		h3
-			+margin(null, null, 10px, null)
-			font-size: $dec_h3_size
-			line-height: $dec_h3_size +2
-		p
-			font-size: $management_p_size
-			color: $main_news_color
-
-
-
+// 4. history  - 연혁
+// @import _4_history/history
+// 5. news  - 한샘소식
+// @import _5_news/news_announce

@@ -1,0 +1,55 @@
+
+.policy_menu 
+	@extend %sub_category_menu
+	li
+		width: $sub_category2_width
+	
+.policy_con
+	@extend %management_title
+	.bg_area 
+		background: url('../images/company_info/policy/img_poli_01.jpg') no-repeat
+
+	& .dec
+		+margin(50px, null)
+		+padding(40px)
+		border-top: 1px solid $ideology_border_color
+		background: url(../images/company_info/policy/img_poli_02.jpg) no-repeat right 50px
+		&:nth-child(2)
+			background: url(../images/company_info/policy/img_poli_03.jpg) no-repeat right 50px
+		&:nth-child(3)
+			background: url(../images/company_info/policy/img_poli_04.jpg) no-repeat right 50px
+		&:nth-child(4)
+			background: url(../images/company_info/policy/img_poli_05.jpg) no-repeat right 50px
+			
+		span
+			display: block
+			font-size: 11px
+			color: #262626
+
+		strong
+			display: block
+			+margin(10px)
+			font-size: 18px
+		p
+			color: #a6a6a6
+.policy_top
+	+padding(null, null, 100px, null)
+	strong
+		color: #9eb4ca
+		font-size: 14px
+	ul
+		@extend %cf
+		li 
+			float: left
+			line-height: 28px
+			color: #184071
+			font-size: 18px
+			font-weigth: bold
+		li + li 
+			margin-left: 40px
+
+
+
+
+
+

@@ -1,0 +1,49 @@
+// ----------------------------------------------
+//	busindess_area.html 스타일 정의
+// ----------------------------------------------
+
+.business_menu
+	@extend %sub_category_menu
+	li 
+		width: $sub_category3_width
+.business_con
+
+	div
+		@extend %management_con
+
+	.business_1
+		@extend %sub_img_style
+		.business_area_menu
+			+position(absolute, 0,0)
+			@extend %sub_side_menu
+
+
+.business_2
+
+	border-top: 1px solid $ideology_border_color
+	@extend %sub_img_style
+	ul.b2_dec
+		@extend %cf
+		li
+			float: left
+			+padding(20px)
+			width: 292px
+			border-top: 1px solid $boder_strong_color
+			font-size: 13px
+			& + li 
+				margin-left: 23px
+			strong 
+				display: block
+				margin-bottom: 10px
+				font-weight: normal
+
+			span
+				display: block
+				line-height: 20px
+			p
+				+margin(5px,0,30px,0)
+				font-size: 13px
+
+
+
+

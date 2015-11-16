@@ -1,0 +1,61 @@
+// ----------------------------------------------
+//	company_info style 정의
+// ----------------------------------------------
+// 기업소개 company_info.html 
+
+.ideology_menu 
+	@extend %fl
+	@extend %sub_category_menu
+	li 
+		width: $sub_category4_width
+		
+	// 	a
+	// 		display: block
+	// 		+padding(17px, null, 17px, null)
+	// 		border-bottom: 1px solid $ideology_border_color
+	// li a :hover,
+	// li.on a
+	// 	+padding(null, null, 16px, null)
+	// 	border-bottom: 2px solid $ideology_border_on_color
+
+	// li + li
+	// 	+margin(null, null, null, 12px)
+
+.management_con
+	clear: both
+	@extend %management_con
+	p
+		font-size: $management_p_size
+		line-height: 20px
+		color: $management_color
+	.detaile_info
+		+position(absolute, 50px, 0, null, null)
+		dl
+			
+			+margin(5px, 0, 5px, 0)
+			line-height: 20px
+			dt
+				@extend %fl
+			dd 
+				@extend %fl
+				@extend %reset-style
+		.clear_left
+			clear: left
+	.deco_bg
+		+margin(30px, 0, 30px, 0)
+		clear: both
+	
+.ideology_con .dec_area .dec
+	@extend %fl
+	+margin(20px, 0, 20px, 0)
+	width: $ideology_dec_width
+	h3
+		+margin(null, null, 10px, null)
+		font-size: $dec_h3_size
+		line-height: $dec_h3_size +2
+	p
+		font-size: $management_p_size
+		color: $main_news_color
+
+
+

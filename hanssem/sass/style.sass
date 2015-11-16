@@ -1,6 +1,13 @@
 // ----------------------------------------------
 //	common 폴더
 // ----------------------------------------------
+@import url(http://fonts.googleapis.com/earlyaccess/nanummyeongjo.css)
+
+// ----------------------------------------------
+//	compass 파일 
+// ----------------------------------------------
+// @import compass/reset
+// @import compass/css3
 
 
 @import common/normlize
@@ -16,9 +23,9 @@
 body 
 	font-size: $page_font_size
 	color : $page_color
-	h1, h2, h3, h4, h5,
+	h1, h2, h3, h4, h5, h6,p
 		@extend %reset-style
-	ul 
+	ul, ol
 		@extend %reset-list
 	& a
 		color: $page_color
@@ -27,12 +34,21 @@ body
 		@extend %reset-style
 		dd 
 			@extend	%reset-style
+	table
+		caption
+			@extend %hide
 
 	.hide
 		@extend %hide
 
 
+
 // ----------------------------------------------
-//	페이지 스타일 
+//	페이지 레이아웃
+// ----------------------------------------------
+@import layout/layout
+
+// ----------------------------------------------
+//	세부 페이지 레이아웃
 // ----------------------------------------------
 @import page/page

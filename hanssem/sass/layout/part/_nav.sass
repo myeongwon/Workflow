@@ -1,0 +1,29 @@
+.gnb
+	+margin(110px)
+	font-size: $gnb_font_size
+	li.on .snb 
+		display: block
+	>li + li 
+		border-top: 1px solid $boder_color
+	>li a 
+		display: block
+		+padding(14px, 0, 14px, 10px)
+	.snb
+
+		display: none
+		+margin(0, 0, 36px, 0)
+		border-top: 1px solid $boder_color
+		font-size: $snb_font_size
+
+		li.on
+			color: $snb_on_color
+		li a:first-child
+			+padding(14px)
+		li a
+			+padding(11px, 0, 0, 10px)
+			&:hover
+				color: $snb_hover_color
+
+@media screen and (min-width: $tablet_min) and (max-width: $tablet_max)
+	.gnb
+		

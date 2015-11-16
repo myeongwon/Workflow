@@ -1,0 +1,68 @@
+
+#wrap 
+	position: relative
+	margin: 0 auto
+	
+	width: 80rem
+	border-left: 1px solid #ebebeb
+	border-top: 1px solid #e8e8e8
+	border-top: 1px solid #f8f8f8
+	color: #262626
+
+	
+
+#wrap header 
+	float: left
+	+padding(0, 40px, 58px, 54px)
+	width: 136px
+
+#wrap .container 
+	float: left
+	+padding(0, 50px, 0, 40px)
+	width: 60rem //960px
+	background: url(../images/common/bg_head_shadow.png) repeat-y left top
+
+
+#wrap .container footer 
+	clear: both
+	margin-top: 50px
+	overflow: hidden
+
+
+// @media screen and (min-width: $tablet_min) and (max-width: $tablet_max)
+// 	#wrap 
+
+// 		header 
+// 			+padding(0,10px,58px,10px)
+		 	
+// 		.container
+// 			+padding(0, 20px, 0, 20px)
+// 			width: 50%
+			
+// 			footer 
+
+
+		
+
+// @media screen and (max-width: $mobile_max)
+// 	#wrap 
+// 		background-color: #f00
+
+
+@import part/skip
+// @import part/layout
+@import part/header
+@import part/nav
+@import part/main
+@import part/footer
+
+
+
+
+
+
+
+
+
+
+

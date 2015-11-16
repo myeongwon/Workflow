@@ -3,108 +3,27 @@
 <head>
 	<meta charset="UTF-8">
 	<title>한샘 닷컴</title>
-	<!-- <link rel="stylesheet" type="text/css" href="css/reset.css"> -->
-	<!-- <link rel="stylesheet" type="text/css" href="css/common.css"> -->
-	<!-- <link rel="stylesheet" type="text/css" href="css/main.css"> -->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.0/masonry.pkgd.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
 </head>
 <body>
 
 
-<nav id="skip_navigation">
-	<a href="#contens">본문영역 바로가기</a>
-</nav>
+<!-- skip -->
+<? include "include/skip.html" ?>
+<!-- // skip -->
 
 <div id="wrap" class="cf">
 	<!-- header -->
-	
-		<?php include "include/header.html"; ?>
-		<header>
-		<h1 class="logo"><a href=""><img src="images/common/hanssem_logo.gif" height="33" width="102" alt="한샘"></a></h1>
-		<nav>
-			<ul class="gnb">
-				<li class="on">
-					<a href="sub/company_info/ideology.html">기업소개</a>
-					<ul class="snb">
-						<li><a href="sub/company_info/ideology.html>">경영이념</a></li>
-						<li><a href="#">경영방침</a></li>
-						<li><a href="">사업소개</a></li>
-						<li><a href="">연혁</a></li>
-						<li><a href="">한샘소식</a></li>
-					</ul>
-				</li>
-				<li>
-					<a href="">채용안내</a>
-					<ul class="snb">
-						<li><a href="">채용공고</a></li>
-						<li><a href="">나의 채용정보</a></li>
-						<li><a href="">채용정보</a></li>
-						<li><a href="">한샘인사</a></li>
-					</ul>
-				</li>
-				<li>
-					<a href="">투자정보</a>
-					<ul class="snb">
-						<li><a href="">경영정보</a></li>
-						<li><a href="">재무정보</a></li>
-						<li><a href="">공지사항</a></li>
-					</ul>
-				</li>
-				<li>
-					<a href="">사회공헌</a>
-					<ul class="snb">
-						<li><a href="">한샘사회공헌</a></li>
-						<li><a href="">사회공헌 발자취</a></li>
-					</ul>
-				</li>
-				<li>
-					<a href="">고객지원</a>
-					<ul class="snb">
-						<li><a href="">한샘서비스센터</a></li>
-						<li><a href="">고객상담</a></li>
-						<li><a href="">찾아오시는 길</a></li>
-						<li><a href="">한샘멤버십</a></li>
-						<li><a href="">한샘상픔권</a></li>
-						<li><a href="">공지사항</a></li>
-					</ul>
-				</li>
-			</ul>
-		</nav>
-		<div class="family_site">
-			<strong><img src="images/common/h2_family.gif" height="14" width="58" alt="family Site"></strong>
-			<ul >
-				<li><a href="">한샘몰</a></li>
-				<li><a href="">한샘키친&amp;바스</a></li>
-				<li><a href="">한샘인테리어</a></li>
-				<li><a href="">한샘ik</a></li>
-				<li><a href="">한샘서비스센터</a></li>
-			</ul>
-		</div>
-		
-		<div class="sns_hansam">
- 			<a href=""><img src="images/main/ico/icon_facebook.gif" height="43" width="43" alt="한샘 facebook"></a>
- 			<a href=""><img src="images/main/ico/icon_blog.gif" height="43" width="43" alt="한샘 naver blog"></a>
- 			<a href=""><img src="images/main/ico/icon_youtube.gif" height="43" width="43" alt="한샘 youtube"></a>
-		</div>
-	</header>
+		<? include "include/header.html" ?>
 	<!-- //header -->
 
 	<section class="container">
 		<h2 class="hide">한샘 본문 영역</h2>
 		<div class="container_top">
-			<ul class="site_info">
-				<li><a href="">멤버십소개</a></li>
-				<li><a href="">사이트맵</a></li>
-			</ul>
-			<div class="language">
-				<strong>Language:</strong>
-				<ul>
-					<li class="on"><a href="">Korea</a>/</li>
-					<li><a href="">English</a>/</li>
-					<li><a href="">Chinese (Simplified)</a></li>
-				</ul>
-				
-			</div>
+			<? include "include/container_top.html" ?>
 		</div>
 		<!-- //container_top  -->
 		
@@ -215,42 +134,7 @@
 
 
 		<footer>
-			<div class="footer_left_area">
-				<ul class="ft_links ">
-					<li><a href="">이용약관</a>/</li>
-					<li><a href="">개인정보취급방침</a>/</li>
-					<li><a href="">이메일무단수집거부</a>/</li>
-					<li><a href="">사이버감사실</a></li>
-				</ul>
-				<address>
-					<p>
-						<span>대표: 최양하, 사업자등록번호: 133-81-2286</span>
-						<span class="right">경기도 안산시 성곡동 665 / 425-110, Tel : 02-6908-3114</span>
-					</p>
-					<p>
-						<span>통신판매신고번호: 안산 제 512호대표번호:02-6908-3114</span>
-						<span class="right"><a href="">A/S센터: http://as.hanssem.com</a> 쇼핑몰 고객센터 : 1688-4945</span>
-					</p>
-					<p>
-						<span class="right"></span>
-					</p>
-					
-				</address>
-			</div>
-
-
-			<div class="footer_right_area">
-				<dl>
-					<dt>한샘플래그샵</dt>
-					<dd class="">잠실점 02-3430-6900,&nbsp;</dd>
-					<dd class="">논현점 02-542-8558</dd>
-					<dd class="">목동점 02-6344-7000,&nbsp;</dd>
-					<dd class="">방배점 02-591-2300</dd>
-					<dd>분당점 031-719-3100</dd>
-					<dd>부산센텀점 051-790-8500</dd>
-				</dl>
-			</div>
-			<!-- // footer_right_area  -->
+			<? include 'include/footer.html'; ?>
 		</footer>
 		<!-- // footer -->
 

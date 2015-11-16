@@ -1,0 +1,67 @@
+.contribute_con
+	
+	>div
+		
+		margin-bottom: 10px
+		+padding(10px, 0, 30px, 0)
+		border-bottom: 1px solid $ideology_border_color
+		p
+			margin-bottom: 10px
+			height: 90px
+			// line-height: 22px
+		span
+			display: block
+		h4
+			margin: 10px 0
+			font-size: $main_h4_size
+			font-weight: normal
+		em
+			display: block
+			font-style: normal
+			font-size: $management_p_size
+			color: $family_color
+		img
+			margin: 5px 0 10px 0
+		
+	.dec_top
+		@extend %management_con
+	.dec
+		@extend %cf
+		div
+			@extend %fl
+		div + div
+			margin-left: 10px
+		.left
+			float: left
+		.social_02
+			@extend %cf
+			width: 474px
+			
+			em
+				float: left
+			em + em
+				margin-left: 30px
+				
+				
+
+	.last_dec
+		@extend %cf
+		div 
+			p,
+			img,
+			em
+				@extend %fl
+				width: 474px
+
+		p
+			height: 120px
+		p + p 
+			margin-left: $conribute_dec_margin
+		img + img
+			margin-left: $conribute_dec_margin
+		em + em
+			margin-left: $conribute_dec_margin
+				
+
+
+	
