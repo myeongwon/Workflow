@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>js를 이용한 반응형 기기감지 스크립트</title>
+  <style>
+  * { margin:0px; padding: 0px;}
+  ul, ol {
+    list-style: none;
+  }
+  .wrap >div {
+    height: 500px;
+
+  }
+   .wrap >div:nth-child(even){
+    background-color: #ddd;
+   }
+  </style>
+</head>
+<body>
+  
+<div class="wrap">
+
+  
+ 
+</div>
+
+
+<script>
+var html = document.documentElement;
+var detect_classes = {
+  'mobile': 800,
+  'tablet': 1024,
+  'desktop': 1280
+};
+
+
+var init_class = detectDevice();
+
+//QQQQQQQQQ 왜 old_class를 함수에 저장해 둔걸까여 ?
+// var assignClassDetection.old_class = init_class;
+// 이렇게 변수로 변경해도 되는데 ? ...
+// 어떤 방법이 좋은건가요?
+var old_class = init_class; 
+html.classList.add(init_class);
+
+
+
+window.onresize= assignClassDetection;
+
+
+function detectDevice(){
+  // width 감지해서 지금 현재 어떤 기기의 상태인지
+  var device_width = window.innerWidth;
+  var type = null;
+
+  if( device_width < detect_classes.mobile ){
+    type = 'mobile';
+  }else if(device_width < detect_classes.tablet){
+    type='tablet';
+  }else if(device_width < detect_classes.desktop){
+    type = 'desktop';
+  }else{
+    type="wide";
+  }
+    return type;
+}
+
+
+
+function assignClassDetection(){
+
+  var html_class = html.getAttribute('class');
+  var current_class = detectDevice();  
+  // 성능이슈 .  
+  if( !html_class || old_class === current_class){
+
+      return false;
+   }
+
+   if( html.classList.contains(old_class) ){
+      html.classList.remove(old_class );
+   }
+
+   html.classList.add(current_class);
+   old_class = current_class;
+
+}
+
+
+</script>
+</body>
+</html>
