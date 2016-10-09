@@ -36,11 +36,6 @@ var detect_classes = {
 
 
 var init_class = detectDevice();
-
-//QQQQQQQQQ 왜 old_class를 함수에 저장해 둔걸까여 ?
-// var assignClassDetection.old_class = init_class;
-// 이렇게 변수로 변경해도 되는데 ? ...
-// 어떤 방법이 좋은건가요?
 var old_class = init_class; 
 html.classList.add(init_class);
 
